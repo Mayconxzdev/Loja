@@ -571,6 +571,7 @@ th:last-child {
   transform: translateX(100px);
   transition: transform 1s;
 }
+
 @media only screen and (max-width: 800px) {
   nav ul {
     position: absolute;

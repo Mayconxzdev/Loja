@@ -1,7 +1,6 @@
--- Criação da tabela de Logs
-CREATE TABLE IF NOT EXISTS logs (
+CREATE TABLE logs (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    usuario VARCHAR(50),
+    usuario VARCHAR(100),
     acao VARCHAR(255),
-    data_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    data TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

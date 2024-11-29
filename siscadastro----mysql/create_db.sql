@@ -1,0 +1,24 @@
+CREATE DATABASE siscadastro;
+
+
+USE siscadastro;
+
+
+CREATE TABLE tblcadastro (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    data_hora DATE NOT NULL,
+    acao VARCHAR(255) NOT NULL,
+    data_criacao DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    is_admin TINYINT(1) DEFAULT 0
+);
+
+
+CREATE TABLE logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario VARCHAR(255) NOT NULL,
+    acao VARCHAR(255) NOT NULL,
+    data TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

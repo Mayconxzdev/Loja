@@ -14,9 +14,6 @@ $login_sucesso = isset($_SESSION["login_sucesso"]) ? $_SESSION["login_sucesso"] 
 // Limpa a flag de sucesso para que a mensagem não apareça novamente
 unset($_SESSION["login_sucesso"]);
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -34,7 +31,7 @@ unset($_SESSION["login_sucesso"]);
     });
     </script>
 
-
+    ?>
     <!DOCTYPE html>
     <html lang="pt-BR">
 
@@ -69,11 +66,9 @@ echo '</div>';
                     <ul id="MenuItens">
                         <li><a href="index.php" title="">Inicio</a></li>
                         <li><a href="produtos.php" title="">Produtos</a></li>
+                        <li><a href="consultar.php" title="">Consultar</a></li>
                         <li><a href="" title="">Contatos</a></li>
                         <li><a href="minha-conta.php" title="">Minha Conta</a></li>
-                        <li><a href="consultar.php" title="">Consultar</a></li>
-                        <li><a href="registro.php">registro</a></li>
-                        <li><a href="log.php">log</a></li>
                     </ul>
 
 

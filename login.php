@@ -23,6 +23,7 @@ $row = $stmt->fetch(PDO::FETCH_OBJ); // Busca o resultado da query como um objet
 if ($row && password_verify($senha, $row->senha)) {
     $_SESSION["email"] = $email; // Armazena o email na sessão
     $_SESSION["nome"] = $row->nome; // Armazena o nome na sessão
+    $_SESSION["is_admin"] = $row->is_admin; // Armazena a permissão de administrador na sessão
     $_SESSION["login_sucesso"] = true; // Flag para indicar login bem-sucedido
 
     // Registra log de login bem-sucedido

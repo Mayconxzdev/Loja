@@ -54,7 +54,7 @@
                             <hr id="Indicador" />
                         </div>
                         <form action="login.php" method="POST" id="EntrarPainel">
-                            <input type="text" name="usuario" id="" placeholder="Usuario" />
+                            <input type="text" name="usuario" id="" placeholder="Digite seu email" />
                             <input type="password" name="senha" id="" placeholder="Digite sua senha" />
                             <button type="submit" name="senEntrar" class="btn">
                                 Entrar
